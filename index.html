@@ -10,51 +10,81 @@
     </head>
     <body>
         <header>
-            <h1 class="title">jens heise</h1>
+            <h1 class="title target-link" data-target="dev">jens heise</h1>
         </header>
-        <main class="content">
-            <div class="box">
-                <section class="center">
-                    <h2>&lt;DEV&gt;</h2>
-                    <h4>based in wuppertal, germany</h4>
-                    <p></p>
-                </section>
-            </div>
-            <div class="box">
-                <section class="center">
-                    <h2>&lt;STUDENT&gt;</h2>
-                    <h4>constantly exploring</h4>
-                    <p>
-                        i'm currently on the way to my bachelor's degree.
-                        <br/>
-                        <br/>
-                        i've always loved to experiment with new technologies and still do to this day.
-                    </p>
-                    <section class="logos">
-                        <a target="_blank" href="https://rust-lang.org"><i class="logo fa-brands fa-rust"></i></a>
-                        <a target="_blank" href="https://vuejs.org"><i class="logo fa-brands fa-vuejs"></i></a>
-                        <a target="_blank" href="https://docker.com"><i class="logo fa-brands fa-docker"></i></a>
+        <div class="content-wrapper">
+            <main class="content">
+                <div id="dev" class="box">
+                    <section class="center">
+                        <h2>&lt;DEV&gt;</h2>
+                        <h4>based in wuppertal, germany</h4>
+                        <p></p>
                     </section>
-                </section>
-            </div>
-            <div class="box">
-                <section class="center">
-                    <h2>&lt;WEB DEV&gt;</h2>
-                    <p>
-                        i'm working as a backend developer at <a target="_blank" href="https://web-fabric.de">web fabric gmbh</a>
-                    </p>
-                    <section class="logos">
-                        <a target="_blank" href="https://php.net"><i class="logo fa-brands fa-php"></i></a>
-                        <a target="_blank" href="https://symfony.com"><i class="logo fa-brands fa-symfony"></i></a>
-                        <a target="_blank" href="https://shopware.com"><i class="logo fa-brands fa-shopware"></i></a>
-                        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><i class="logo fa-brands fa-square-js"></i></a>
+                </div>
+                <div id="student" class="box">
+                    <section class="center">
+                        <h2>&lt;STUDENT&gt;</h2>
+                        <h4>constantly exploring</h4>
+                        <p>
+                            i'm currently on the way to my bachelor's degree.
+                            <br/>
+                            <br/>
+                            i've always loved to experiment with new technologies and still do to this day.
+                        </p>
+                        <section class="logos">
+                            <a target="_blank" href="https://rust-lang.org"><i class="logo fa-brands fa-rust"></i></a>
+                            <a target="_blank" href="https://vuejs.org"><i class="logo fa-brands fa-vuejs"></i></a>
+                            <a target="_blank" href="https://docker.com"><i class="logo fa-brands fa-docker"></i></a>
+                        </section>
                     </section>
-                </section>
+                </div>
+                <div id="web-dev" class="box">
+                    <section class="center">
+                        <h2>&lt;WEB DEV&gt;</h2>
+                        <p>
+                            i'm working as a backend developer at <a target="_blank" href="https://web-fabric.de">web fabric gmbh</a>
+                        </p>
+                        <section class="logos">
+                            <a target="_blank" href="https://php.net"><i class="logo fa-brands fa-php"></i></a>
+                            <a target="_blank" href="https://symfony.com"><i class="logo fa-brands fa-symfony"></i></a>
+                            <a target="_blank" href="https://shopware.com"><i class="logo fa-brands fa-shopware"></i></a>
+                            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><i class="logo fa-brands fa-square-js"></i></a>
+                        </section>
+                    </section>
+                </div>
+                <div id="contact" class="box">
+                    <section class="center">
+                        <h2>&lt;CONTACT&gt;</h2>
+                        <p>
+                            say hello at <a href="mailto:web@jensheise.com">web@jensheise.com</a>
+                        </p>
+                    </section>
+                </div>
+                <div id="imprint" class="box">
+                    <section class="center">
+                        <h2>&lt;IMPRINT&gt;</h2>
+                        <p>
+                            jens heise<br/>
+                            <span class="small"><a href="mailto:web@jensheise.com">web@jensheise.com</a></span>
+                            <hr/>
+                            <span class="small">friedrich-engels-allee 332</span>
+                            <span class="small">42283 wuppertal</span>
+                        </p>
+                    </section>
+                </div>
+            </main>
+            <div class="arrows">
+                <div class="arrow arrow-up">
+                    <i class="fa-solid fa-circle-chevron-up"></i>
+                </div>
+                <div class="arrow arrow-down">
+                    <i class="fa-solid fa-circle-chevron-down"></i>
+                </div>
             </div>
-        </main>
+        </div>
         <footer>
             <section class="links">
-                <a>imprint</a>
+                <a class="target-link" data-target="imprint">imprint</a>
                 <span class="spacer">|</span>
                 <a>privacy</a>
             </section>
