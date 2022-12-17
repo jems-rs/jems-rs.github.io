@@ -72,7 +72,7 @@ footer {
     overflow-y: scroll;
     position: relative;
     scroll-snap-type: y mandatory;
-    transition: transform ease 0.5s, box-shadow ease 0.5s;
+    transition: transform ease 200ms, box-shadow ease 200ms;
     width: 80vw;
 }
 
@@ -126,7 +126,11 @@ footer {
     font-size: 1.75rem;
     position: absolute;
     right: 0.5rem;
-    transition: color 300ms;
+    transition: color ease 300ms, transform ease 150ms;
+}
+
+.arrow.down {
+    transform: translate(0, 0.1rem) scale(0.9);
 }
 
 .arrow-up {

@@ -11,10 +11,12 @@ const observerOptions = {
 }
 let currentItem = 0;
 
-function mouseDown() {
+function mouseDown(e) {
+    e.target.closest('.arrow').classList.add('down');
     content.classList.add('down');
 }
-function mouseUp() {
+function mouseUp(e) {
+    e.target.closest('.arrow').classList.remove('down');
     content.classList.remove('down');
 }
 function updateVisibility(intersections) {
@@ -72,10 +74,12 @@ function moveDown() {
     move(currentItem+1);
 }
 
-content.addEventListener('mousedown', mouseDown);
-content.addEventListener('mouseup', mouseUp);
 arrowUp.addEventListener('click', moveUp);
+arrowUp.addEventListener('mousedown', mouseDown);
+arrowUp.addEventListener('mouseup', mouseUp);
 arrowDown.addEventListener('click', moveDown);
+arrowDown.addEventListener('mousedown', mouseDown);
+arrowDown.addEventListener('mouseup', mouseUp);
 
 const observer = new IntersectionObserver(updateVisibility, observerOptions);
 
