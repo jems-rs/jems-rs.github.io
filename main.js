@@ -61,13 +61,17 @@ function move(pos) {
     });
     currentItem = pos;
 }
-function moveUp() {
+function moveUp(e) {
+    mouseDown(e);
+    setTimeout(() => { mouseUp(e) }, 250);
     if (currentItem === 0 || items.length < 1) {
         return;
     }
     move(currentItem-1);
 }
-function moveDown() {
+function moveDown(e) {
+    mouseDown(e);
+    setTimeout(() => { mouseUp(e) }, 250);
     if (items.lengths < 1 || currentItem === items.length-1) {
         return;
     }
@@ -75,11 +79,7 @@ function moveDown() {
 }
 
 arrowUp.addEventListener('click', moveUp);
-arrowUp.addEventListener('mousedown', mouseDown);
-arrowUp.addEventListener('mouseup', mouseUp);
 arrowDown.addEventListener('click', moveDown);
-arrowDown.addEventListener('mousedown', mouseDown);
-arrowDown.addEventListener('mouseup', mouseUp);
 
 const observer = new IntersectionObserver(updateVisibility, observerOptions);
 
