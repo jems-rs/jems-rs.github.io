@@ -64,13 +64,19 @@ footer {
     position: relative;
 }
 
+.content::-webkit-scrollbar {
+    width: 0;
+}
+
 .content {
     box-shadow: 0px 7px 13px 1px rgba(0, 0, 0, 0.25);
     height: 75vh;
     max-width: 600px;
+    -ms-overflow-style: none;
     overflow-x: hidden;
     overflow-y: scroll;
     position: relative;
+    scrollbar-width: none;
     scroll-snap-type: y mandatory;
     transition: transform ease 200ms, box-shadow ease 200ms;
     width: 80vw;
