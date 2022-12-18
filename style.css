@@ -28,10 +28,11 @@ body {
     flex-direction: column;
     font-family: 'Chivo Mono', 'Consolas', sans-serif;
     font-style: normal;
-    height: 100vh;
     justify-content: center;
     margin: 0;
+    min-height: 100vh;
     row-gap: 1.5rem;
+    width: 100vw;
 }
 
 a {
@@ -166,6 +167,12 @@ footer {
     :root {
         font-size: 1.35rem;
     }
+    .content {
+        height: 70vh;
+    }
+    .arrow {
+        font-size: 2.25rem;
+    }
 }
 
 @media screen and (max-width: 650px) and (max-height: 700px) {
@@ -179,7 +186,7 @@ footer {
         font-size: 1.3rem;
     }
     .content {
-        height: 70vh;
+        height: 65vh;
     }
 }
 
@@ -188,7 +195,7 @@ footer {
         font-size: 1.2rem;
     }
     .content {
-        height: 65vh;
+        height: 60vh;
     }
 }
 
